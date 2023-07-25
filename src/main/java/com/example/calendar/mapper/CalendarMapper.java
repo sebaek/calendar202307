@@ -9,6 +9,19 @@ import org.apache.ibatis.annotations.Options;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 
+/*
+create table todo
+(
+    id         int auto_increment
+        primary key,
+    dateString varchar(10)      not null,
+    title      varchar(300)     not null,
+    body       varchar(3000)    not null,
+    done       int(1) default 0 null
+);
+ */
+
+
 @Mapper
 public interface CalendarMapper {
 
